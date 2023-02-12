@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.5"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest-chrome": "^0.7.0"
+  },
+  "name": "rcpopup_chrome",
+  "version": "1.0.0",
+  "main": "background.js",
+  "keywords": [],
+  "license": "ISC",
+  "description": ""
+}

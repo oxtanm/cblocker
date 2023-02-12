@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rcpopup
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rcpopup
+  template:
+    metadata:
+      labels:
+        app: rcpopup
+        version: v1
+    spec:
+      containers:
+      - name: rcpopup
+        image: rcpopup
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rcpopup
+  labels:
+    app: rcpopup
+    service: rcpopup-service
+spec:
+  selector:
+    app: rcpopup
+  ports:
+    - port: 80
+      name: http
+

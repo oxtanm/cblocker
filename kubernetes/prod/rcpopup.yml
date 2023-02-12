@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rcpopup
+  namespace: prod
+spec:
+  template:
+    spec:
+      containers:
+      - name: rcpopup
+        image: rcpopup:prod
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rcpopup
+  namespace: prod
+

@@ -1,0 +1,93 @@
+body {
+	overflow: hidden;
+	background-color: #f4f4f4;
+	padding: 12px;
+	flex-direction: column;
+	font-style: normal;
+    font-family: "Lato", Arial, sans-serif;
+}
+
+#head {
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+#head .title {
+	margin-left: 10px;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+#wrapper {
+	width: 350px;
+	padding: 12px;
+}
+
+#content {
+	background-color: #fff;
+	padding: 18px;
+}
+
+.page .link {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 8px;
+}
+
+.page .border {
+	height: 0.6px;
+	border-width: 0;
+	color: gray;
+	background-color: gray;
+	opacity: 0.2;
+	margin-bottom: 12px;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.pure-control-group textarea {
+	height: 100px;
+	resize: none;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer button {
+	margin: 0 !important;
+}
+
+.footer .unresolved {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.unresolved .number {
+	background-color: #ff9966;
+	border-radius: 4px;
+	font-weight: 500;
+}
+
+.unresolved div {
+	padding: 6px;
+}
+
+.status {
+	padding-bottom: 8px; 
+}
+
+.status span {
+	color: #ff9966;
+	font-weight: 500;
+}
+
+.status div {
+	padding-bottom: 2px;
+}

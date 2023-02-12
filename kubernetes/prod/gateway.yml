@@ -1,0 +1,21 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: rcpopup-gw
+  namespace: prod
+spec:
+  selector:
+    istio: ingressgateway # use istio default controller
+  servers:
+  - port:
+      number: 443
+      name: https
+      protocol: HTTPS
+    hosts:
+    - "rcpopup.com"
+    tls:
+      mode: SIMPLE
+      credentialName: prod-rcpopup-com-tls2
+    
+
+

@@ -1,0 +1,5 @@
+/home/magnus/code/rcpopup_chrome/reporter-server/src/main/java/com/project/reportapi/controller/ReportController.java
+/home/magnus/code/rcpopup_chrome/reporter-server/src/main/java/com/project/reportapi/repository/ReportRepository.java
+/home/magnus/code/rcpopup_chrome/reporter-server/src/main/java/com/project/reportapi/service/ReportService.java
+/home/magnus/code/rcpopup_chrome/reporter-server/src/main/java/com/project/reportapi/model/Report.java
+/home/magnus/code/rcpopup_chrome/reporter-server/src/main/java/com/project/reportapi/ReportapiApplication.java

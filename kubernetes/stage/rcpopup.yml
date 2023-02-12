@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rcpopup
+  namespace: stage
+spec:
+  template:
+    spec:
+      containers:
+      - name: rcpopup
+        image: rcpopup:staging
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rcpopup
+  namespace: stage
+

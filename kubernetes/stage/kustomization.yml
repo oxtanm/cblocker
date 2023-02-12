@@ -1,0 +1,9 @@
+bases:
+- ../base/
+resources:
+- letsencrypt-issuer-stage.yml
+- gateway.yml
+- virtual-service.yml
+patchesStrategicMerge:
+- rcpopup.yml
+- reporter-server.yml

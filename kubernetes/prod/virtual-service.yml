@@ -1,0 +1,52 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: rcpopup-vs
+  namespace: prod
+spec:
+  hosts:
+  - "rcpopup.com"
+  gateways:
+  - rcpopup-gw
+  http:
+  - match:
+    - uri:
+        prefix: /report
+    route:
+    - destination:
+        host: reporter-server
+        port:
+          number: 80
+    corsPolicy:
+      allowOrigins:
+      - exact: https://rcpopup.com
+      allowMethods:
+      - POST
+      - GET
+      - PUT
+      - OPTIONS
+      - DELETE
+      allowCredentials: true
+      allowHeaders:
+      - "*"
+      maxAge: "24h"
+  - route:
+    - destination:
+        port:
+          number: 80
+        host: rcpopup
+    corsPolicy:
+      allowOrigins:
+      - exact: https://rcpopup.com
+      allowMethods:
+      - POST
+      - GET
+      - PUT
+      - OPTIONS
+      - DELETE
+      allowHeaders:
+      - "*"
+      allowCredentials: true
+      maxAge: "24h"
+
+

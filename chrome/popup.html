@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="UTF-8">
+        <title>Remove Cookie Popup</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="head">
+                <div class="icon">
+                    <img src="images/RCP32.png" />
+                </div>
+                <div class="title">Remove Cookie Popup</div>
+            </div>
+            <div id="content">
+                <div class="page">
+                    <div class="link">Status</div>
+                    <hr class="border" />
+                </div>
+                <div class="status">
+                    <div>Popups på webbsidor:</div>
+                    <div><span id="num-resolved">0</span> framgånsrikt blockerade</div>
+                    <div><span id="num-reported">0</span> rapporterade</div>
+                    <div><span id="num-success">0%</span> framgång</div>
+                </div>
+                <form class="pure-form pure-form-aligned">
+                    <fieldset>
+                        <div class="pure-controls footer">
+                            <button type="submit" id="sendReport" class="pure-button pure-button-primary">Rapportera fel
+                            </button>
+                            <div class="unresolved">
+                                <div class="number" id="num-fixed">-</div>
+                                <div class="text"> Fixade i senaste versionen</div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!-- wrapper -->
+        
+        <script src="popup.js"></script>
+    </body>
+</html>

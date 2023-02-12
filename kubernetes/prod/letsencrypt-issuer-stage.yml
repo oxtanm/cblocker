@@ -1,0 +1,35 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: rcpopup-prod
+  namespace: istio-system
+spec:
+  acme:
+    # The ACME server URL
+    server: https://acme-v02.api.letsencrypt.org/directory
+    # server: https://acme-v02.api.letsencrypt.org/directory
+    # Email address used for ACME registration
+    email: magnus.ekdahl@gmail.com
+    # Name of a secret used to store the ACME account private key
+    privateKeySecretRef:
+      name: rcpopup-prod2
+    # Enable the HTTP-01 challenge provider
+    solvers:
+    # An empty 'selector' means that this solver matches all domains
+    - selector: {}
+      http01:
+        ingress:
+          class: nginx
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: rcpopup-com
+  namespace: istio-system
+spec:
+  secretName: prod-rcpopup-com-tls2
+  issuerRef:
+    name: rcpopup-prod
+    kind: Issuer
+  dnsNames:
+  - rcpopup.com

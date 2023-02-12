@@ -1,0 +1,7 @@
+GDPR direktivet som EU har infört tvingar webbsidor att fråga efter ditt tillstånd för att spara cookies som loggar ditt besök. Därför får du konstant dessa irriterade rutor om integritet “privacy” som poppar upp på sidor! Om du verkligen bryr di om integritet och tar bort kakor ofta i webbläsaren blir detta väldigt störande.
+ 
+Remove Cookie Popup (RCP) tillägget för Chrome accepterar cookies för dig och sparar en massa tid och irritation. RCP fungerar på många sidor och nya sidor läggs till kontinuerligt.
+
+Ta bort de irriterande cookie rutorna idag! 
+
+RCP kostar enbart 10 SEK i engångsavgift, testa i 60 dagar utan kostnad. 
